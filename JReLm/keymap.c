@@ -708,7 +708,6 @@ uint8_t layer_state_set_user(uint8_t state) {
 const key_override_t dash_key_override = 
     ko_make_basic(MOD_MASK_SHIFT, KC_MINUS, KC_QUOTE);
 
-const key_override_t **key_overrides = (const key_override_t *[]){
-	&dash_key_override,
-	NULL
+const key_override_t *key_overrides[] = {
+	&dash_key_override
 };
