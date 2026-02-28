@@ -708,7 +708,7 @@ uint8_t layer_state_set_user(uint8_t state) {
 const key_override_t dash_key_override = 
     ko_make_with_layers(MOD_MASK_SHIFT, KC_MINUS, LSC(KC_QUOTE), 1<<1);
 
-cost key_override_t quote_override =
+const key_override_t quote_override =
     ko_make_with_layers(MOD_MASK_SHIFT, KC_QUOTE, LSC(KC_MINUS), 1<<1);
 
 const key_override_t left_arrow_override =
