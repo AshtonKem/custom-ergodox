@@ -706,16 +706,16 @@ uint8_t layer_state_set_user(uint8_t state) {
 };
 
 const key_override_t dash_key_override = 
-    ko_make_with_layers(MOD_MASK_SHIFT, KC_MINUS, LSC(KC_QUOTE), 1<<1);
+    ko_make_with_layers(MOD_MASK_SHIFT, KC_MINUS, LSFT(KC_QUOTE), 1<<1);
 
 const key_override_t quote_override =
-    ko_make_with_layers(MOD_MASK_SHIFT, KC_QUOTE, LSC(KC_MINUS), 1<<1);
+    ko_make_with_layers(MOD_MASK_SHIFT, KC_QUOTE, LSFT(KC_MINUS), 1<<1);
 
 const key_override_t left_arrow_override =
-    ko_make_with_layers(MOD_MASK_SHIFT, KC_SLASH, LSC(KC_COMMA), 1<<1);
+    ko_make_with_layers(MOD_MASK_SHIFT, KC_SLASH, LSFT(KC_COMMA), 1<<1);
 
 const key_override_t question_override =
-    ko_make_with_layers(MOD_MASK_SHIFT, KC_COMMA, LSC(KC_SLASH), 1<<1);
+    ko_make_with_layers(MOD_MASK_SHIFT, KC_COMMA, LSFT(KC_SLASH), 1<<1);
 
 const key_override_t *key_overrides[] = {
 	&dash_key_override,
