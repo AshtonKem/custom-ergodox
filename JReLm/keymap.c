@@ -28,9 +28,9 @@ enum tap_dance_codes {
   DANCE_14,
 };
 
-#define DUAL_FUNC_0 LT(5, KC_Z)
-#define DUAL_FUNC_1 LT(10, KC_8)
-#define DUAL_FUNC_2 LT(4, KC_R)
+#define DUAL_FUNC_0 LT(12, KC_F5)
+#define DUAL_FUNC_1 LT(6, KC_N)
+#define DUAL_FUNC_2 LT(9, KC_D)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_ergodox_pretty(
@@ -45,8 +45,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [1] = LAYOUT_ergodox_pretty(
     TD(DANCE_2),    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
-    KC_TRANSPARENT, KC_B,           KC_L,           KC_D,           KC_W,           KC_Z,           KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_COMMA,       KC_F,           KC_O,           KC_U,           KC_J,           KC_SCLN,
-    KC_TRANSPARENT, KC_N,           KC_R,           KC_S,           KC_T,           KC_G,                                                                           KC_Y,           KC_H,           KC_A,           KC_E,           KC_I,           KC_TRANSPARENT,
+    KC_TRANSPARENT, KC_B,           KC_L,           KC_D,           KC_W,           KC_Z,           KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_QUOTE,       KC_F,           KC_O,           KC_U,           KC_J,           KC_SCLN,
+    KC_TRANSPARENT, KC_N,           KC_R,           KC_S,           KC_T,           KC_G,                                                                           KC_Y,           KC_H,           KC_A,           KC_E,           KC_I,           KC_COMMA,
     KC_TRANSPARENT, KC_Q,           KC_X,           KC_M,           KC_C,           KC_V,           KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_K,           KC_P,           KC_DOT,         KC_MINUS,       KC_SLASH,       KC_TRANSPARENT,
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                                                                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
                                                                                                     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
@@ -74,7 +74,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                                                     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT
   ),
 };
-
 
 
 
